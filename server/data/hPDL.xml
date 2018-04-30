@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<workflow-app name="hPDL" xmlns="uri:oozie:workflow:0.2">
+	<start to="Za4Np9">
+	</start>
+	<action name="Za4Np9">
+		<zzjz xmlns="uri:oozie:zzjz-action:0.1">
+			<noteid>ozdf762e6e469a431fbae2d30888193b80</noteid>
+			<pid>Za4Np9</pid>
+			<nodeid>A</nodeid>
+			<content>...</content>
+		</zzjz>
+		<ok to="vA5fa3">
+		</ok>
+		<error to="fail">
+		</error>
+	</action>
+	<fork name="A516334A-8EA1-4714-8361-7B6970C0B971">
+		<path start="eBLdvS">
+		</path>
+		<path start="YaB9nq">
+		</path>
+	</fork>
+	<action name="vA5fa3">
+		<zzjz xmlns="uri:oozie:zzjz-action:0.1">
+			<noteid>ozdf762e6e469a431fbae2d30888193b80</noteid>
+			<pid>vA5fa3</pid>
+			<nodeid>B</nodeid>
+			<content>...</content>
+		</zzjz>
+		<ok to="A516334A-8EA1-4714-8361-7B6970C0B971">
+		</ok>
+		<error to="fail">
+		</error>
+	</action>
+	<action name="eBLdvS">
+		<zzjz xmlns="uri:oozie:zzjz-action:0.1">
+			<noteid>ozdf762e6e469a431fbae2d30888193b80</noteid>
+			<pid>eBLdvS</pid>
+			<nodeid>C</nodeid>
+			<content>...</content>
+		</zzjz>
+		<ok to="AE881010-AA6B-4FF6-8844-DA0D19BF62A6">
+		</ok>
+		<error to="fail">
+		</error>
+	</action>
+	<action name="YaB9nq">
+		<zzjz xmlns="uri:oozie:zzjz-action:0.1">
+			<noteid>ozdf762e6e469a431fbae2d30888193b80</noteid>
+			<pid>YaB9nq</pid>
+			<nodeid>D</nodeid>
+			<content>...</content>
+		</zzjz>
+		<ok to="AE881010-AA6B-4FF6-8844-DA0D19BF62A6">
+		</ok>
+		<error to="fail">
+		</error>
+	</action>
+	<join name="AE881010-AA6B-4FF6-8844-DA0D19BF62A6" to="qoPz0x">
+	</join>
+	<action name="qoPz0x">
+		<zzjz xmlns="uri:oozie:zzjz-action:0.1">
+			<noteid>ozdf762e6e469a431fbae2d30888193b80</noteid>
+			<pid>qoPz0x</pid>
+			<nodeid>E</nodeid>
+			<content>...</content>
+		</zzjz>
+		<ok to="CvwH0H">
+		</ok>
+		<error to="fail">
+		</error>
+	</action>
+	<action name="CvwH0H">
+		<zzjz xmlns="uri:oozie:zzjz-action:0.1">
+			<noteid>ozdf762e6e469a431fbae2d30888193b80</noteid>
+			<pid>CvwH0H</pid>
+			<nodeid>F</nodeid>
+			<content>...</content>
+		</zzjz>
+		<ok to="Jdtxl8">
+		</ok>
+		<error to="fail">
+		</error>
+	</action>
+	<action name="Jdtxl8">
+		<zzjz xmlns="uri:oozie:zzjz-action:0.1">
+			<noteid>ozdf762e6e469a431fbae2d30888193b80</noteid>
+			<pid>Jdtxl8</pid>
+			<nodeid>G</nodeid>
+			<content>...</content>
+		</zzjz>
+		<ok to="end">
+		</ok>
+		<error to="fail">
+		</error>
+	</action>
+	<kill name="fail">
+		<message>ZZJZfailed,
+		errormessage[${
+			wf: errorMessage(wf: lastErrorNode())
+		}]</message>
+	</kill>
+	<end name="end">
+	</end>
+</workflow-app>
+
+
