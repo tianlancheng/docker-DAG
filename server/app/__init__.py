@@ -8,14 +8,14 @@ from config import config
 from flask_pymongo import PyMongo
 import redis
 
-#connect to redis
-pool = redis.ConnectionPool(host=Config.REDIS_HOST,port=Config.REDIS_PORT,db=0)
-rcon = redis.StrictRedis(connection_pool=pool)
+
 
 app = Flask(__name__)
 app.config.from_object(config['default'])
 
-
+#connect to redis
+pool = redis.ConnectionPool(host=app.config['REDIS_HOST'],port=app.config['REDIS_PORT'],db=0)
+rcon = redis.StrictRedis(connection_pool=pool)
 
 mongo = PyMongo(app)
 

@@ -1,0 +1,5 @@
+flask
+docker
+flask_pymongo
+redis
+pymongo

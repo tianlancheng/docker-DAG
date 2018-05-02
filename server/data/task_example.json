@@ -1,0 +1,156 @@
+{
+    "Slot": 1,
+    "Stats":
+    {
+        "Timestamp": "2018-05-02T07:35:02.30230448Z",
+        "State": "running",
+        "ContainerStatus":
+        {
+            "PID": 41250,
+            "ContainerID": "90f62b2714241c649e9522ca4bad1327aab6611e6aca4a695059b04752e285bc"
+        },
+        "Message": "started",
+        "PortStatus":
+        {}
+    },
+    "Labels":
+    {},
+    "NodeID": "j42ziqs0wkha80d8m8p5iqdvu",
+    "ID": "vzlnujl8dstkhrbe7lld6ixyd",
+    "DesiredState": "running",
+    "Version":
+    {
+        "Index": 15297
+    },
+    "ServiceID": "1cybs9c0js0dztztzbvvehv9h",
+    "UpdatedAt": "2018-05-02T07:35:02.313827883Z",
+    "Spec":
+    {
+        "RestartPolicy":
+        {
+            "Delay": 0,
+            "Window": 0,
+            "MaxAttempts": 0,
+            "Condition": "none"
+        },
+        "ContainerSpec":
+        {
+            "Mounts": [
+            {
+                "Source": "nfs-volume",
+                "Type": "volume",
+                "Target": "/nfs"
+            }],
+            "Isolation": "default",
+            "Image": "jdtxl8",
+            "Command": ["./run", "/nfs/5ae96a0f2d3a386c6132f057/Jdtxl8", "/nfs/5ae96a0f2d3a386c6132f057/CvwH0H"]
+        },
+        "ForceUpdate": 0
+    },
+    "CreatedAt": "2018-05-02T07:35:01.492850783Z"
+}
+
+{
+    "Slot": 1,
+    "Status":
+    {
+        "Timestamp": "2018-05-02T07:35:02.626582351Z",
+        "State": "complete",
+        "ContainerStatus":
+        {
+            "ContainerID": "90f62b2714241c649e9522ca4bad1327aab6611e6aca4a695059b04752e285bc"
+        },
+        "Message": "finished",
+        "PortStatus":
+        {}
+    },
+    "Labels":
+    {},
+    "NodeID": "j42ziqs0wkha80d8m8p5iqdvu",
+    "ID": "vzlnujl8dstkhrbe7lld6ixyd",
+    "DesiredState": "shutdown",
+    "Version":
+    {
+        "Index": 15300
+    },
+    "ServiceID": "1cybs9c0js0dztztzbvvehv9h",
+    "UpdatedAt": "2018-05-02T07:35:02.920530419Z",
+    "Spec":
+    {
+        "RestartPolicy":
+        {
+            "Delay": 0,
+            "Window": 0,
+            "MaxAttempts": 0,
+            "Condition": "none"
+        },
+        "ContainerSpec":
+        {
+            "Mounts": [
+            {
+                "Source": "nfs-volume",
+                "Type": "volume",
+                "Target": "/nfs"
+            }],
+            "Isolation": "default",
+            "Image": "jdtxl8",
+            "Command": ["./run", "/nfs/5ae96a0f2d3a386c6132f057/Jdtxl8", "/nfs/5ae96a0f2d3a386c6132f057/CvwH0H"]
+        },
+        "ForceUpdate": 0
+    },
+    "CreatedAt": "2018-05-02T07:35:01.492850783Z"
+}
+
+
+{
+    "Slot": 1,
+    "Status":
+    {
+        "ContainerStatus":
+        {
+            "ContainerID": "85f947a92a9b32641c49424a882ff4df2a6d206f518bfacebbfaebc68eae501c",
+            "ExitCode": 1
+        },
+        "PortStatus":
+        {},
+        "Err": "task: non-zero exit (1)",
+        "Timestamp": "2018-05-02T07:57:39.329652904Z",
+        "State": "failed",
+        "Message": "started"
+    },
+    "Labels":
+    {},
+    "NodeID": "j42ziqs0wkha80d8m8p5iqdvu",
+    "ID": "o7obpid6umhosleu50heruyro",
+    "DesiredState": "shutdown",
+    "Version":
+    {
+        "Index": 15314
+    },
+    "ServiceID": "0zo6am006a4y66cpbnmszby6m",
+    "UpdatedAt": "2018-05-02T07:57:39.426528048Z",
+    "Spec":
+    {
+        "RestartPolicy":
+        {
+            "Delay": 0,
+            "Window": 0,
+            "MaxAttempts": 0,
+            "Condition": "none"
+        },
+        "ContainerSpec":
+        {
+            "Mounts": [
+            {
+                "Source": "nfs-volume",
+                "Type": "volume",
+                "Target": "/nfs"
+            }],
+            "Isolation": "default",
+            "Image": "za4np9",
+            "Command": ["./run"]
+        },
+        "ForceUpdate": 0
+    },
+    "CreatedAt": "2018-05-02T07:57:37.714423334Z"
+}

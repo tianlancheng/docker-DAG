@@ -12,6 +12,8 @@ class DevelopmentConfig(Config):
 	MONGO_DBNAME = 'dagdb'
 	MONGO_URI = 'mongodb://127.0.0.1:27017/dagdb'
 	DOCKER_VERSION='1.35'
+	REDIS_HOST = 'localhost'
+	REDIS_PORT = '6379'
 
 config = {
 	'default': DevelopmentConfig
